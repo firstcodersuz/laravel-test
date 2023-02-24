@@ -17,6 +17,6 @@ class Application extends Model
         'file_url'
     ];
 
-    public function user(){return BelongsTo(User::class);}
+    public function user(){return $this->belongsTo(User::class);}
 
 }
